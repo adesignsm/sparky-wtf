@@ -1,0 +1,40 @@
+#entry-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100dvh;
+    backdrop-filter: blur(var(--entry-screen-blur));
+    z-index: 999;
+}
+
+#entry-screen .enter-website-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 75vw;
+    margin: 0 auto;
+}
+
+#entry-screen .enter-website-container #enter-button {
+    position: absolute;
+    margin: 0 auto;
+    border: 1px solid #FFC412;
+    padding: 1rem 15rem;
+    background-color: transparent;
+    color: #FFC412;
+    text-transform: uppercase;
+    font-size: large;
+    cursor: pointer;
+}
+
+#entry-screen .enter-website-container #enter-button p {
+    margin: 0;
+}
+
+#entry-screen .enter-website-container .entry-ui {
+    position: absolute;
+    margin: 0 auto;
+    transform: scale(1);
+}

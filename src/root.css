@@ -1,5 +1,27 @@
+:root {
+    --entry-screen-blur: 50px;
+}
+
 body, html {
     padding: 0;
     margin: 0;
     background-color: #040404;
+    cursor: url(./Assets/Media/UI/crosshair.png), auto;
+    overflow: hidden;
+}
+
+#cross-hair {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+#x-coord, #y-coord {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    color: #FFC412;
+    font-size: small;
 }

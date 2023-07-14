@@ -1,0 +1,53 @@
+#HUD-interface-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#HUD-interface-screen .HUD-parts-container {
+    height: 100%;
+    width: 100%;
+}
+
+.hud-top {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hud-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .hud-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  
+  .hud-left {
+    position: absolute;
+    top: 50%;
+    left: -0.1%;
+    transform: translateY(-51%);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .hud-top,
+    .hud-bottom,
+    .hud-right,
+    .hud-left {
+      position: static;
+      transform: none;
+      margin: 0 auto;
+    }
+  }
+  
